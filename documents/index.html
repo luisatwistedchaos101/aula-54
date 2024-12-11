@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+<body>
+<button id="Wish"> Eu vim desejar</button>
+<button id="Segredo">Eu tenho uma surpresa pra vc!</button>
+<button id="Almoco">Colocar a farofa</button>
+<ul>
+    <li> Arroz
+    <li>Feijão
+    <li>Bife
+    <li>Alface
+    <li>Tomate
+    <li>Batata
+
+</ul>
+
+<script>
+    $("#Wish").click(function(){
+        $("#Wish").text("Um feliz Natal a todos! :)")
+    })
+    
+
+$("#Segredo").click(function() {
+    $("#Segredo").after("<p>Toma um coração pra vc! (^w^)>♡)</p>")
+})
+
+$("#Almoco").click(function(){
+$("ul").append("<li> Farofa </li> ")
+})
+
+</script>
+
+</body>
+</html>
